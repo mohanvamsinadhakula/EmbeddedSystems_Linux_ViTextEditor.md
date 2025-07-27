@@ -1,5 +1,3 @@
-# EmbeddedSystems_Linux_ViTextEditor.md
-
 # Embedded System Introduction – Linux – VI Text Editor
 
 ## What is meant by Embedded Systems?

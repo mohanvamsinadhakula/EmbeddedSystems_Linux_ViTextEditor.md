@@ -120,26 +120,26 @@ Even experienced developers introduce bugs. A debugger helps isolate and fix iss
 
 By mastering these tools and workflows, you lay the foundation for effective and efficient embedded systems development.
 #Linux and its devlopment tools
-# 🧠 Embedded Systems Development Workflow (with Linux Context)
+# Embedded Systems Development Workflow (with Linux Context)
 
-## 📌 What is an Embedded System?
+## What is an Embedded System?
 
 An **Embedded System** is a specialized computer designed to perform a dedicated task within a larger system. It is optimized for performance, reliability, and efficiency for a specific application.
 
 ---
 
-## ⚙️ Development Workflow (Linux-Based)
+## Development Workflow (Linux-Based)
 
 The typical development flow for embedded systems under Linux includes the following steps:
 
-### 🔤 1. Writing the Program – Using Text Editors
+### 1. Writing the Program – Using Text Editors
 
 Text editors are used to write the source code.
 
 - **CLI Editors:** `vim`, `nano`, `emacs`
 - **GUI Editors:** `gedit`, `VS Code`, `KDevelop`, `Sublime Text`
 
-### 🔧 2. Compiling the Code – Using a Compiler
+###  2. Compiling the Code – Using a Compiler
 
 The compiler translates your C/C++ code into machine-readable format.
 
@@ -150,7 +150,7 @@ The compiler translates your C/C++ code into machine-readable format.
   - `Make`, `CMake`
   - **Yocto**, **Buildroot**, **OpenWRT**
 
-### 🐞 3. Debugging – Using Debugger
+### 3. Debugging – Using Debugger
 
 Debugging tools help you test and troubleshoot runtime errors.
 
@@ -161,7 +161,7 @@ Debugging tools help you test and troubleshoot runtime errors.
 - **Remote Debugging:**
   - `gdbserver` (on target), `gdb` (on host)
 
-### 🔗 4. Linking & Loading – Using Linkers and Loaders
+### 4. Linking & Loading – Using Linkers and Loaders
 
 - **Linking:**
   - GNU `ld`, linker scripts (`.ld`) for memory layout
@@ -171,7 +171,7 @@ Debugging tools help you test and troubleshoot runtime errors.
 
 ---
 
-## 🔄 Summary Table
+##  Overview
 
 | **Step**         | **Tool Used**                              | **Linux Context**                                                         |
 |------------------|--------------------------------------------|---------------------------------------------------------------------------|
@@ -182,7 +182,7 @@ Debugging tools help you test and troubleshoot runtime errors.
 
 ---
 
-## 🛠️ Additional Linux Tools
+## Additional Linux Tools
 
 | **Tool**         | **Purpose**                                      |
 |------------------|--------------------------------------------------|
@@ -193,7 +193,7 @@ Debugging tools help you test and troubleshoot runtime errors.
 
 ---
 
-## 📈 Visual Workflow Diagram (Markdown)
+## Visual Workflow Diagram (Markdown)
 
 ```mermaid
 flowchart TD

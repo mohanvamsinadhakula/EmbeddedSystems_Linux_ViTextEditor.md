@@ -202,6 +202,7 @@ flowchart TD
     C --> D[Link Objects with ld / Linker Script]
     D --> E[Load via U-Boot / Loader / Flash Tools]
     E --> F[Execute on Embedded Target]
+```
 # VI - Text Editor
 
 1. **VI** stands for **Visual Interface**. The advanced version of the Vi text editor is **Vim - Vi Improved**.

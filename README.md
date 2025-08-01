@@ -202,3 +202,90 @@ flowchart TD
     C --> D[Link Objects with ld / Linker Script]
     D --> E[Load via U-Boot / Loader / Flash Tools]
     E --> F[Execute on Embedded Target]
+# VI - Text Editor
+
+1. **VI** stands for **Visual Interface**. The advanced version of the Vi text editor is **Vim - Vi Improved**.
+2. In Linux, we generally use CLI-based tools, such as the **Vi text editor**.
+3. When you open the Ubuntu OS, there is a special application called the **Terminal Application**.
+4. To write any C program, use the command:  
+   ```bash
+   $ vi filename.c
+   ```
+5. To open an existing C program:  
+   ```bash
+   $ vi filename.c
+   ```
+6. To list files present in the directory:  
+   ```bash
+   $ ls
+   ```
+7. **What are the different types of files that can be seen on the terminal when you run `$ls`?**  
+   There are three types of files:
+   - **White-colored files**: Normal/Text files.
+   - **Blue-colored files**: Directories/Folders.
+   - **Green-colored files**: Executable files.
+
+8. **How can you view file information?**  
+   By using additional flags with the `ls` command, such as:  
+   ```bash
+   $ ls -l
+   ```
+   This displays:
+   - File permissions (Read/Write/Execute)
+   - User name / Group
+   - Size of the file
+   - Date and time of last modification
+   - File name
+
+9. **Where can you find the flags and options used with the `$ls` command?**  
+   - Use the manual pages:  
+     ```bash
+     $ man ls
+     ```
+   - Use the help option:  
+     ```bash
+     $ ls --help
+     ```
+
+10. **How to compile a C program in Ubuntu?**  
+    Use the command:  
+    ```bash
+    $ gcc filename.c
+    ```
+    - This compiles the C statements into instructions.
+    - Instructions contain **opcodes (operation codes)** and **operands**:
+      - **Opcode**: Unique code specifying the operation.
+      - **Operand**: Address in memory (can be a value or CPU register name).
+
+11. **How to create a new directory?**  
+    Use the command:  
+    ```bash
+    $ mkdir directory_name
+    ```
+    For help:
+    ```bash
+    $ man mkdir
+    $ mkdir --help
+    ```
+
+12. **How to remove a directory?**  
+    - To remove an **empty directory**:
+      ```bash
+      $ rmdir directory_name
+      ```
+      or
+      ```bash
+      $ rm -d directory_name
+      ```
+    - To remove a **non-empty directory**:
+      ```bash
+      $ rm -r directory_name
+      ```
+      `-r` stands for **recursive**, meaning it removes all subfolders and files.
+
+    For help:
+    ```bash
+    $ man rmdir
+    $ rmdir --help
+    $ man rm
+    ```

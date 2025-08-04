@@ -290,3 +290,34 @@ flowchart TD
     $ rmdir --help
     $ man rm
     ```
+    ### 19. How can you copy a single line or multiple lines in `vi`/`vim`?
+
+- **A.** For copying a single line we use → `yy` (yy stands for *Yankee*, meaning *copy*).
+- **B.** For copying 2 lines we use → `2yy`.
+- **C.** For copying 4 lines we use → `4yy`.
+- **D.** Similarly, for copying *n* lines we use → `nyy`.
+
+---
+
+### 20. How can you paste a single line or multiple lines in `vi`/`vim`?
+
+- **A.** For pasting a single line → use `p`.
+- **B.** For pasting 2 lines → use `p` (press `p` again to paste multiple times).
+- **C.** For pasting 4 lines → use `p` (repeat `p` or use a count before it, like `4p`).
+- **D.** Similarly, for pasting *n* lines → use `p`.
+
+> There are **two types** of pasting:
+> - `P` → Paste **above** the current cursor line.
+> - `p` → Paste **below** the current cursor line.
+
+---
+
+### 21. What is Linux? How many layers are present?
+
+**Linux** is a free and open-source **Operating System kernel** — the core component of a computer's software.
+
+It consists of **two main layers**:
+
+1. **User Space** – contains applications and user interfaces.
+2. **Kernel Space** – contains core system functionalities like **device drivers**, memory management, and process scheduling.
+

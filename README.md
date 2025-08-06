@@ -312,12 +312,119 @@ flowchart TD
 
 ---
 
-### 21. What is Linux? How many layers are present?
+## 21. What is Linux? How many layers are present?
 
-**Linux** is a free and open-source **Operating System kernel** — the core component of a computer's software.
+**Answer:**  
+Linux is a free and open-source operating system (OS) kernel, which is the core component of a computer’s software stack.
 
-It consists of **two main layers**:
+It consists of two main layers:
 
-1. **User Space** – contains applications and user interfaces.
-2. **Kernel Space** – contains core system functionalities like **device drivers**, memory management, and process scheduling.
+1. **User Space** – Contains Applications.  
+2. **Kernel Space** – Contains Device Drivers and Core Subsystems.
+
+**Additional Notes:**
+
+- Between user space and kernel space, there exist **320+ system calls** which allow communication between applications and the kernel.
+- Peripheral access is possible only through **device drivers** present in the kernel space.
+- A **driver** acts as a bridge between the operating system and hardware.
+- **System call-backs** are used to facilitate communication from user space (applications) to kernel space (drivers).
+- The kernel space includes five core subsystems:
+  - **Process Management Subsystem**
+  - **Memory Management Subsystem**
+  - **File Management Subsystem**
+  - **Device I/O Management Subsystem**
+  - **Network Management Subsystem** (e.g., TCP/IP stack)
+- Device Drivers are a part of the kernel space as well.
+
+---
+
+## 22. Can Applications Send Requests to Devices?
+
+**Answer:**  
+No, applications **cannot directly send requests** to devices.  
+They must use **system calls**, which communicate the request to the device drivers in kernel space.
+
+---
+
+## 23. Who Can Initiate an I/O Request? (Application, Device Driver, Hardware)
+
+**Answer:**  
+- **Applications** can initiate an I/O request using system calls.
+- **Device Drivers** cannot initiate the request by themselves.
+- The **application starts** the interaction.
+
+---
+
+## 24. Can Devices Initiate an I/O Request Using Hardware Interrupt?
+
+**Answer:**  
+Yes, devices can initiate an I/O request using a **hardware interrupt** mechanism, which alerts the processor to handle data or a required task.
+
+---
+
+## 25. Are There Any Ways to Jump From Command Mode to Insert Mode in `vi`?
+
+**Answer:**  
+Yes, there are **three main ways**:
+
+1. `i` – Inserts at the cursor position.
+2. `O` – Opens a new line **above** the current line and enters insert mode.
+3. `o` – Opens a new line **below** the current line and enters insert mode.
+
+---
+
+## 26. How to Jump to the Last Line or First Line in `vi`?
+
+**Answer:**
+
+- **Last Line:** Press `G` (uppercase).
+- **First Line:** Press `gg`.
+- **Specific Line Number:** Use either:
+  - `:line_number<Enter>`
+  - `line_numberG`
+
+**Example:**  
+To go to line 25 → `25G` or `:25<Enter>`
+
+---
+
+## 27. How Do You Exit From `man` Command Documentation?
+
+**Answer:**  
+Press **`q`** to quit the man page and return to the terminal prompt.
+
+---
+
+## 28. How Do You Delete Single/Multiple Lines in `vi`?
+
+**Answer:**
+
+- **Delete one line:** `dd`
+- **Delete multiple lines:** `ndd`, where `n` is the number of lines
+
+**Example:**  
+Delete 4 lines → `4dd`
+
+---
+
+## 29. How Do You Search in `vi`?
+
+**Answer:**
+
+- To search: Use `/<string>` + `<Enter>`  
+- This will move the cursor to the **first instance** of the string.
+
+> **Note:** Searching is **case-sensitive** because C and `vi` treat uppercase and lowercase characters differently due to their distinct ASCII values.
+
+---
+
+## 30. How to Find the Next Instance of a Search String?
+
+**Answer:**
+
+- **Next instance (forward):** Press `n`
+- **Previous instance (backward):** Press `N` or `Shift + n`
+
+---
+
 

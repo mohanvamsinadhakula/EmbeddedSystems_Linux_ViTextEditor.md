@@ -1,4 +1,4 @@
-hi# What is an Embedded System?
+# What is an Embedded System?
 
 An **Embedded System** is a specialized computer system designed to perform a dedicated function or set of functions within a larger mechanical or electrical system. Unlike general-purpose computers, embedded systems are optimized for specific tasks, offering better performance, reliability, and efficiency for their intended use.
 

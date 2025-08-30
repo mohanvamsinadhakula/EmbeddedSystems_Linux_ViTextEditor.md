@@ -10,7 +10,7 @@ To work effectively with embedded systems, it's essential to understand and use 
 
 1. **Writing the Program** – Using text editors (e.g., VI or VIM)
 2. **Compiling the Code** – Using a compiler (e.g., GCC)
-3. **Debugging the Program** – Using a debugger (e.g., GDB)
+3. **Debugging the Program** - Using a debugger (e.g., GDB)
 4. **Loading the Program** – Using a linker/loader (e.g., LDD)
 
 ---

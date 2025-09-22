@@ -425,7 +425,7 @@ Delete 4 lines → `4dd`
 - **Next instance (forward):** Press `n`
 - **Previous instance (backward):** Press `N` or `Shift + n`
 
-
+The above information is mentioned with best of my knowledge.
 ---
 
 
